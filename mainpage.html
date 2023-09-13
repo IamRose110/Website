@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sample03-styles/navbar-style.css">
+    <link rel="stylesheet" href="sample03-styles/mainpage-style.css">
+    <link rel="stylesheet" href="sample03-styles/all-styles.css">
+    <link rel="stylesheet" href="sample03-styles/footer-style.css">
+    <title>sample03</title>
+</head>
+<body>
+    <div class="upper-message-container">
+        <div class="upper-message">
+            <p>Welcome to <span class="upper-message-farmie">Farmie</span>, we hope you will enjoy out products and have good experience </p>
+        </div>
+        <div class="upper-contact">
+            <div class="upper-contact-email">
+                <img class="upper-contact-email-img" src="images/email-mail-svgrepo-com.svg" alt=""> Email: rose.steph24@gmail.com
+            </div>
+            <div class="upper-contact-phone">
+                <img class="upper-contact-phone-img" src="images/phone-call-svgrepo-com.svg" alt=""> Phone: (032) 231-7929
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div class="navbar-logo">
+            <h1><span class="navbar-logo-farmie">FAR</span>MIE</h1>
+        </div>
+            
+        <div class="navbar-menu-container">
+            <div class="menu-container">
+                <div class="navbar-menu">HOME</div>
+                <div class="navbar-menu">ABOUT</div>
+
+                <div class="navbar-menu-pages">PAGES &#11167
+                    <div id="pages_submenu">
+                        <div class="submenu">Home</div>
+                        <div class="submenu">About Us</div>
+                        <div class="submenu">Farming Products</div>
+                    
+                        <div class="submenu-shop">Shop <span class="arrow-right">></span>
+                            <div class="submenu-shop-container">
+                                <div class="shop-submenu">Our Products</div>
+                                <div class="shop-submenu">Shop</div>
+                            </div>
+                        </div>
+                        <div class="submenu-news">News <span class="arrow-right"></span>
+                            <div class="submenu-news-container">
+                                <div class="submenu-news">News</div>
+                                <div class="submenu-news">News Details</div>
+                            </div>
+                        </div>
+                        <div class="submenu">Contacts</div>
+                    </div>
+                </div>
+                <div class="navbar-menu-leftside">
+                    <div class="navbar-menu">OUR PRODUCT</div>
+                <div class="navbar-menu">FARMING PRACTICE</div>
+                <div class="navbar-menu">NEWS</div>
+                <div class="navbar-menu">ABOUT</div>
+                <div class="navbar-menu">
+                    <img src="" alt="">
+                </div>
+                <div class="navbar-menu">
+                    <img src="" alt="">
+                </div>
+                </div>         
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var pages_submenu= document.getElementById("pages_submenu")
+        var sticky = navbar.offsetTop;
+        var sticky_pages_submenu = pages_submenu.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          }
+          if (window.pageYOffset >= sticky) {
+            pages_submenu.classList.add("sticky_pages_submenu")
+          }
+          else {
+            navbar.classList.remove("sticky");
+            pages_submenu.classList.remove("sticky_pages_submenu")
+          }
+        }          
+        </script>
+    
+
+    <div class="mainpage-container">
+        <div class="mainpage-content-container">
+            <div class="mainpage-content">
+                The Heart Of The Farm Is The True Center Of Our Universe
+            </div>
+            <div class="mainpage-content-message">
+                Welcome and please enjoy discovering our products and services. 
+                Hope you will see what you need and we hope we can also help you
+                organized and enhance your farm. We present only the best. Thank you. 
+            </div>
+            <div class="mainpage-content-button">
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="thirdcontent-container">
+        <div class="thirdcontent">
+            <img class="thirdcontent-picture" src="images/bg4.webp" alt="">
+        </div>
+
+        <div class="thirdcontent-offers-container">
+            <div class="thirdcontent-offers1">
+                <div class="thirdcontent-offers-picture">
+                    <img src="images/service.webp" alt="">
+                </div>
+                <div class="thirdcontent-offers-names">
+                    <h3>Best Service</h3>
+                </div>
+            </div>
+            <div class="thirdcontent-offers2">
+                <div class="thirdcontent-offers-picture">
+                     <img src="images/experience.webp" alt="">
+                </div>
+                 <div class="thirdcontent-offers-names">
+                    <h3>Farm Experience</h3>
+                </div>
+            </div>
+            <div class="thirdcontent-offers3">
+                <div class="thirdcontent-offers-picture">
+                    <img src="images/natural.webp" alt="">
+                </div>
+                <div class="thirdcontent-offers-names">
+                    <h3>100% Natural</h3>
+                </div>
+            </div>
+            <div class="thirdcontent-offers4">
+                <div class="thirdcontent-offers-picture">
+                    <img src="images/equipment.webp" alt="">
+                </div>
+                <div class="thirdcontent-offers-names">
+                    <h3>Farm Equipment</h3>
+                </div>
+            </div>
+            <div class="thirdcontent-offers5">
+                <div class="thirdcontent-offers-picture">
+                    <img src="images/organic.webp" alt="">
+                </div>
+                <div class="thirdcontent-offers-names">
+                    <h3>Organic Food</h3>
+                </div>
+            </div>
+
+            <div class="thirdcontent-ourstory-container">
+                <div class="thirdcontent-ourstory">
+                    <div class="thirdcontent-ourstory-aboutus">
+                        <p>ABOUT US</p>
+                    </div>
+                    <div class="thirdcontent-ourstory-letus">
+                        <h2><span class="thirdcontent-ourstory-letus-color">Let Us</span> Tell You Our Story </h2>
+                    </div>
+                    <div class="thirdcontent-ourstory-image">
+                        <img src="images/leave.webp" alt="">
+                    </div>
+                    <div class="thirdcontent-ourstory-message">
+                        Customer service is very important, as a result of customer support. 
+                        Even now the market, the price of the atlanta pot is fast, the yeast is 
+                        sickened by the menace. Hence, we value our customer and promise to give
+                        the best products and services. Please continue supporting us and we'll do 
+                        our best to provide for you.
+                    </div>
+                    <div class="thirdcontent-ourstory-button">
+                        <button>READ MORE</button>
+                    </div>
+
+                </div>
+                <div class="thirdcontent-ourstory-picture-container">
+                    <div class="thirdcontent-ourstory-picture">
+                        <img src="images/rice.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourthcontent-container">
+        <div class="fourthcontent-picture-container">
+
+        </div>
+        <div class="fourthcontent-ourproduce-container">
+            <div class="service-whatwedo">
+                WHAT WE DO
+            </div>
+            <div class="service-ourproduce">
+                <h2><span>Our Produce </span>Is Mainstay For Us</h2>
+            </div>
+            <div class="service-image-logo">
+                <img src="images/leave.webp" alt="">
+            </div>
+            <div class="service-message-content">
+                Intiam eu sagittis est, aster cosmo lacini libero. 
+                Praesent dignissim sed odio velo aliquam manta legolas.
+                Mauris fermentum nunc quis massa lacinia consequat. 
+                Suspendisse orci magna, pharetra sedonia risus ut, elementum 
+                mollis nisin. Nunc in sapien turpis. Donec egeto david orci 
+                pulvinar ultrices necto drax turpis. Pellentesque justo metus, 
+                semper nec ullamcorper id, gravida ultricies arcu.
+            </div>
+            <div class="service-product-container">
+                <div class="service-product-section1">
+                    <div class="product-container">
+                        <div class="service-product">
+                            <div class="product-logo">
+                                <img src="images/fruit.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                <h3>Fruit & Vegetable</h3>
+                            </div>
+                        </div>
+                        <div class="product-content-container">
+                            <div class="product-content">
+                                Intiam eu sagittis est, aster cosmo lacini libero. 
+                                Praesent dignissim sed odio velo aliquam manta legolas.
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="product-container">
+                    <div class="service-product">
+                        <div class="product-logo">
+                            <img src="images/meat.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h3>Meat & Eggs</h3>
+                        </div>
+                    </div>
+                        <div class="product-content-container">
+                            <div class="product-content">
+                                Intiam eu sagittis est, aster cosmo lacini libero.
+                                 Praesent dignissim sed odio velo aliquam manta legolas.
+                            </div>
+                        </div>                  
+                </div>
+                
+                </div>
+                <div class="service-product-section2">
+                    <div class="product-container">
+                        <div class="service-product">
+                            <div class="product-logo">
+                                <img src="images/milk.webp" alt="">
+                            </div>
+                        <div class="product-name">
+                            <h3>Milk & Cheese</h3>
+                        </div>
+                    </div>
+                        <div class="product-content-container">
+                            <div class="product-content">
+                                Intiam eu sagittis est, aster cosmo lacini libero.
+                                 Praesent dignissim sed odio velo aliquam manta legolas.
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    <div class="product-container">
+                        <div class="service-product">
+                            <div class="product-logo">
+                                <img src="images/corn.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                <h3>Rice & Corn</h3>
+                            </div>
+                        </div>
+                        <div class="product-content-contaniner">
+                            <div class="product-content">
+                                Intiam eu sagittis est, aster cosmo lacini libero. 
+                                Praesent dignissim sed odio velo aliquam manta legolas.
+                            </div>
+                        </div>                    
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer-container">
+        <div class="footer-sections-container">
+            <div class="footer-farmie-con">
+                <div class="col-1-farmie-con">
+                    <div class="col-1-farmie">
+                        <h2><span>FAR</span>MIE</h2>
+                    </div>
+                    <div class="col-1-message">
+                        <p>Lorem ipsum dolor sit amet, consecte stare adipiscing elit. 
+                            In act honcus risus atiner Pellentesque risus.</p>
+                    </div>
+                    <div class="col-1-con">
+                        <div class="col-1-loc-con">
+                            <div class="col-1-img">
+                                <img src="images/location-sign-svgrepo-com.svg" alt="">
+                            </div>
+                            <div class="col-1-loc">
+                                120 Raymond Rd. New York
+                            </div>
+                        </div>
+                        <div class="col-1-loc-con">
+                            <div class="col-1-img">
+                                <img src="images/email-mail-svgrepo-com.svg" alt="">
+                            </div>
+                            <div class="col-1-loc">
+                                rose.steph24@gmail.com
+                            </div>
+                        </div>
+                        <div class="col-1-loc-con">
+                            <div class="col-1-img">
+                                <img src="images/phone-call-svgrepo-com.svg" alt="">
+                            </div>
+                            <div class="col-1-loc">
+                                (032) 231-7929
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+            </div>
+
+            <div class="footer-quick-con">
+                    <div class="col-2-quick">
+                        <h3>QUICK LINK</h3>
+                    </div>
+                    <div class="col-2-sections-con">
+                        <div class="col-2-sec-2-con">
+                            <p>Purchase</p>
+                            <p>Shipping</p>
+                            <p>Return</p>
+                            <p>Payments</p>
+                            <p>Guide</p>
+                            <p>News</p>
+                        </div>
+                        <div class="col-2-sec-2-con">
+                            <p>Policities</p>
+                            <p>FAQs</p>
+                            <p>Careers</p>
+                            <p>Partners</p>
+                            <p>Standard</p>
+                            <p>Brands</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-recent-con">        
+                    <div class="col-3-recent">
+                        <h3>RECENT NEWS</h3>
+                    </div>
+                    <div class="col-3-section-con">
+                        <div class="col-3-image">
+                            <img src="images/footer-img.webp" alt="">
+                        </div>
+                        <div class="col-3-text-con">
+                            <div class="con-3-text">
+                                WA’s largest farming business on the market
+                            </div>
+                            <div class="con-3-date">
+                                18 Aug 2018
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3-section-con">
+                        <div class="col-3-image">
+                            <img src="images/footer.webp" alt="">
+                        </div>
+                        <div class="col-3-text-con">
+                            <div class="con-3-text">
+                                Beef retail prices hit a record
+                            </div>
+                            <div class="con-3-date2">
+                                18 Aug 2018
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-stay-con">
+                <div class="col-4-stay-con">
+                    <h3>STAY CONNECTED</h3>
+                    <div class="col-4-sections">
+                        <div class="col-4">
+                            <div class="col-4-image">          
+                                <a href="https://www.facebook.com/"><img class="media-logo" src="images/facebook.png" alt="facebook">Facebook </a>
+                            </div>    
+                        </div>
+                        <div class="col-4">
+                            <div class="col-4-image">          
+                                <a href="facebook.com"> <img class="media-logo" src="images/twitter.png" alt="">Twitter</a>
+                            </div> 
+                        </div>
+                        <div class="col-4">
+                            <div class="col-4-image">
+                                <div class="col-4-image">          
+                                    <a href="facebook.com"> <img class="media-logo" src="images/pinteres.png" alt=""> Pinterest</a>
+                                </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-reserve-message-container">
+                Copyright ©2022 All rights reserved | This template is made with  by Colorlib - <span>Clone by rose 2k22</span>
+            </div>
+            <div class="footer-menu-link-container">
+                <div class="menulink">About</div>
+                <div class="menulink">Produce</div>
+                <div class="menulink">Practice</div>
+                <div class="menulink">Products</div>
+                <div class="menulink">News</div>
+                <div class="menulink">Contact</div>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>
